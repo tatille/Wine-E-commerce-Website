@@ -1,0 +1,375 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+  height: 100%;
+  
+}
+
+@keyframes moveBackground {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20%, 20%);
+  }
+}
+
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 25px rgba (255, 255, 255, 0.25);
+  animation: animate_4010 8s ease-in-out infinite;
+}
+
+.bubble:nth-child(2) {
+  position: relative;
+  zoom: 0.45;
+  left: -10px;
+  top: -100px;
+  animation-delay: -4s;
+}
+
+.bubble:nth-child(3) {
+  position: relative;
+  zoom: 0.45;
+  right: -80px;
+  top: -300px;
+  animation-delay: -6s;
+}
+
+.bubble:nth-child(4) {
+  position: relative;
+  zoom: 0.35;
+  left: -120px;
+  bottom: -200px;
+  animation-delay: -3s;
+}
+
+.bubble:nth-child(5) {
+  position: relative;
+  zoom: 0.5;
+  left: 0px;
+  top: 200px;
+  animation-delay: -5s;
+}
+
+@keyframes animate_4010 {
+  0%,100% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.bubble::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 45px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 10;
+  filter: blur(2px);
+}
+
+.bubble::after {
+  content: '';
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  z-index: 10;
+  filter: blur(2px);
+}
+
+.bubble span {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.bubble span:nth-child(1) {
+  inset: 10px;
+  border-left: 15px solid #0fb4ff;
+  filter: blur(8px);
+}
+
+.bubble span:nth-child(2) {
+  inset: 10px;
+  border-right: 15px solid #ff4484;
+  filter: blur(8px);
+}
+
+.bubble span:nth-child(3) {
+  inset: 10px;
+  border-top: 15px solid #ffeb3b;
+  filter: blur(8px);
+}
+
+.bubble span:nth-child(4) {
+  inset: 30px;
+  border-left: 15px solid #ff4484;
+  filter: blur(12px);
+}
+
+.bubble span:nth-child(5) {
+  inset: 10px;
+  border-bottom: 10px solid #fff;
+  filter: blur(8px);
+  transform: rotate(330deg);
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:radial-gradient(ellipse, orangered, transparent, orange) orange; /* Màu nền trắng cho navbar */
+    color: #333; /* Màu chữ tương phản */
+    padding: 10px 20px; /* Khoảng cách lề bên trong navbar */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Khoảng cách giữa các mục menu, tăng lên 40px */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px; /* Đặt khoảng cách giữa nội dung và viền của mỗi nút */
+    background-color: #555; /* Màu nền cho mỗi nút */
+    border-radius: 5px; /* Bo tròn viền của mỗi nút */
+}
+
+
+.search-login input[type="text"],
+.search-login button,
+.login-signup a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #555; /* Màu nền cho ô tìm kiếm và nút */
+    color: white;
+    outline: none;
+}
+
+.login-signup a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.login-signup a:hover {
+    color: #f1f1f1; /* Màu chữ khi di chuột qua */
+}
+
+/* Các điều chỉnh khác tùy theo thiết kế cụ thể bạn muốn thực hiện */
+
+
+footer a {
+    text-decoration: none;
+    color: blue;
+  
+  color: white;
+}
+
+
+p {
+    margin-bottom: 10px;
+}
+
+hr {
+    clear: both;
+    width: 50%;
+    border-color: brown;
+    margin: auto;
+    margin-bottom: 10px;
+}
+header form input[type="text"] {
+    background-color: grey;
+    color: brown;
+    border: 0;
+}
+
+header form input[type="button"] {
+    background-color: brown;
+    color: white;
+    border: 0;
+}
+
+#banner {
+    position: relative;
+    max-width: 100%;
+}
+
+.banner {
+    width: 100%;
+    z-index: 1;
+}
+
+.shopnow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: pink;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.shopnow:hover {
+    background-color: #ff4081;
+    transform: scale(1.1);
+}
+
+.p21 {
+    font-size: 1.2em;
+}
+
+
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    white-space: nowrap; /* Ngăn chữ trong nút xuống dòng */
+}
+.trending {
+    width: 90%;
+    clear: both;
+    margin-top: 20%;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.product img {
+    width: 90%;
+}
+
+table img {
+    width: 20px;
+    height: 20%;
+}
+
+.product {
+    width: 30%;
+    float: left;
+    margin-right: 20px;
+}
+
+.blogs {
+    column-count: 2;
+    text-align: justify;
+}
+
+.signup {
+    background-color: darkgrey;
+    min-height: 50px;
+    vertical-align: middle;
+    padding-top: 3%;
+    width: 80%;
+    margin: auto;
+    padding-left: 28px;
+}
+
+.label-signup {
+    max-width: 30%;
+    float: left;
+}
+
+.footnavl {
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+}
+
+.footnav2 {
+    width: 30%;
+    float: left;
+    margin-right: 3%;
+}
+
+.footnav3 {
+    width: 30%;
+    float: left;
+}
+
+#extend-f {
+    margin-top: 5%;
+    padding-top: 5px;
+    min-height: 150px;
+    clear: both;
+    background-color: lightgrey;
+}
+
+
+
+.product button {
+    background-color: brown;
+    color: white;
+    margin-bottom: 5%;
+}
+#search-bar {
+  margin-top: 20px;
+  text-align: center; /* Canh giữa nội dung trong phần tìm kiếm */
+}
+
+#search-bar form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-bar input[type="text"] {
+  padding: 10px; /* Tăng padding cho ô nhập liệu */
+  border: 1px solid #000; /* Đổi màu viền thành đen */
+  border-radius: 4px;
+  margin-right: 5px;
+  width: 60%; /* Giảm độ rộng của ô nhập liệu */
+  max-width: 300px; /* Đặt độ rộng tối đa cho ô nhập liệu */
+  color: #000; /* Màu chữ đen */
+  background-color: #fff; /* Nền trắng */
+}
+
+#search-bar button {
+  padding: 10px 20px; /* Tăng padding cho button */
+  border: none;
+  border-radius: 4px;
+  background-color: #000; /* Màu nền đen */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Tạo hiệu ứng hover mượt mà */
+}
+
+#search-bar button:hover {
+  background-color: #333; /* Đổi màu nền hover thành đen nhạt */
+}
+
+
+
+#root-f {
+    height: 30px;
+    background-color: brown;
+    text-align: center;
+    padding: 10px ; /* Tạo khoảng cách phía trên và phía dưới */
+    color: white; /* Thay đổi màu chữ để phù hợp với nền */
+}
