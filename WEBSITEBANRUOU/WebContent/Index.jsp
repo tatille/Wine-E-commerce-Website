@@ -93,12 +93,12 @@
             <hr>
         </section>
           <div class="bubble">
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											    </div>   
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	    </div>   
         <section class="popular">
             <h2>SẢN PHẨM PHỔ BIẾN</h2>
             <p class="intro"></p>
@@ -115,13 +115,13 @@
                 </div>
             </c:forEach>
             <hr>
-											    <div class="bubble">
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											    </div>   
+		    <div class="bubble">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		    </div>   
         <section class="saleoff">
     <h2>SẢN PHẨM GIẢM GIÁ</h2>
     <c:forEach items="${saleofflistp}" var="s">
@@ -140,12 +140,12 @@
 </section>
      </section>
      <div class="bubble">
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											    </div>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	    </div>
         <section class="blog">
             <h2>Chúng Tôi Cam Đoan!</h2>
             <p>Chúng tôi cam kết tất cả các sản phẩm được phân phối tại Website đều là hàng đã qua kiểm tra, có nguồn gốc xuất xứ đầy đủ. Giao hàng nhanh chóng khách hàng kiểm tra hàng chuẩn mới phải thanh toán.
@@ -176,12 +176,12 @@
                     <li><a href="#">Chính sách bảo mật</a></li>
                 </ul>
                  <div class="bubble">
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											        <span></span>
-											    </div>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		    </div>
             </nav>
              
             <nav class="footnav3">
